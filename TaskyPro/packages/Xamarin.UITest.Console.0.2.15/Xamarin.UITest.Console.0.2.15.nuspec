@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Xamarin.UITest.Console</id>
+    <version>0.2.15</version>
+    <title>Xamarin.UITest.Console</title>
+    <authors>Rasmus Kromann-Larsen</authors>
+    <owners>Rasmus Kromann-Larsen</owners>
+    <projectUrl>http://github.com/xamarin/Xamarin.UITest</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Test Cloud uploader for Xamarin.UITest.</description>
+    <summary>Test Cloud uploader for Xamarin.UITest.</summary>
+    <releaseNotes />
+    <copyright>Copyright 2014</copyright>
+    <language />
+  </metadata>
+</package>

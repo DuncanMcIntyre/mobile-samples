@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Xamarin.UITest</id>
+    <version>0.2.15</version>
+    <title>Xamarin.UITest</title>
+    <authors>Rasmus Kromann-Larsen</authors>
+    <owners>Rasmus Kromann-Larsen</owners>
+    <projectUrl>http://github.com/xamarin/Xamarin.UITest</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>UI Automation Framework for Android and iOS.</description>
+    <summary>UI Automation Framework for Android and iOS.</summary>
+    <releaseNotes />
+    <copyright>Copyright 2014</copyright>
+    <language />
+  </metadata>
+</package>

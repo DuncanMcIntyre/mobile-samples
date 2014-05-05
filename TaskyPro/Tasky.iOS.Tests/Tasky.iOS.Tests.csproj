@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{68DCA35D-ED0E-4E8A-B27E-8867E56CE89B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Tasky.iOS.Tests</RootNamespace>
+    <AssemblyName>Tasky.iOS.Tests</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Xamarin.UITest">
+      <HintPath>..\packages\Xamarin.UITest.0.2.15\lib\Xamarin.UITest.dll</HintPath>
+    </Reference>
+    <Reference Include="TechTalk.SpecFlow">
+      <HintPath>..\packages\SpecFlow.1.9.0\lib\net35\TechTalk.SpecFlow.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Test.cs" />
+    <Compile Include="iOSTest.cs" />
+    <Compile Include="Page\iOSPage.cs" />
+    <Compile Include="Page\TaskDetailsPage.cs" />
+    <Compile Include="Page\TaskyProPage.cs" />
+    <Compile Include="Page\IHaveTrait.cs" />
+    <Compile Include="AddTaskTest.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="App.config" />
+    <None Include="add_task.feature" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Page\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tasky.Core\Tasky.Core.csproj">
+      <Project>{0C3C87F3-B754-4196-A371-08EAE5BDC2DC}</Project>
+      <Name>Tasky.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
